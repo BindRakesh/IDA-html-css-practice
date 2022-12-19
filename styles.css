@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+display: flex;
+position: fixed;
+width: 100vw;
+flex-direction: column;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(52,192,221,1) 0%, rgba(4,133,182,1) 91%);
+    border-radius: 20px 20px 20px 0;
+}
+
+nav .logo img{
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+}
+
+.text-search{
+    position: relative;
+}
+
+.text-search form{
+    display: flex;
+}
+
+.text-search form input{
+    width: 35vw;
+    padding: 1rem;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    border: none;
+}
+
+.text-search form button{
+    background-color: rgba(4,133,182,1);
+    font-size: 1rem;
+    color: white;
+    padding: 10px 30px;
+    border: solid 1px gainsboro;
+    border-radius: 0px 5px 5px 0;
+}
+
+.dropdown select{
+    width: 20vw;
+    border: none;
+    border-radius: 0.8rem;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.bell img{
+    width: 30px;
+    margin-bottom: 0.6rem;
+    margin-right: 2rem;
+}
+
+.right-nav{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+}
+.profile-avatar img{
+    width:3.5rem;
+}
+
+.profile-options select{
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-bottom: 1rem;
+}
+
+.profile-options select option{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.sidebar{
+    min-height: 100vh;
+    background-color: rgb(48,187,218);
+    width: 5vw;
+    position: fixed;
+    z-index: -5;
+    border-radius: 20px 0 20px 20px;
+}
+
+.sidebar .icons{
+    margin-top: 20vh;
+}
+
+.sidebar .icons span {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.sidebar .icons span:nth-child(3){
+    margin-top: 30vh;
+    bottom: 0;
+}
+
+.sidebar .icons span svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    color:white;
+}
+
+.content-container {
+    background-color: white;
+    height: 86.5vh;
+    width: 95.3vw;
+    position: fixed;
+    overflow-y: scroll;
+    top: 13.5vh;
+    left: 4.7vw;
+    border-radius: 1rem 0 0 0;
+}
+
+.advance-search{
+    position:absolute;
+    right: 0;
+    margin-right: 0.1rem;
+}
+
+.contents{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex: 1 0 20%; 
+    height: 16rem;
+    background-color: rgb(252, 240, 240);
+    margin: 1.8rem;
+    border-radius: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
